@@ -36,21 +36,17 @@
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
         </field>
-        <field id="billing_address" xsi:type="AttributeLinkedSet">
-          <linked_class>Location</linked_class>
-          <ext_key_to_me>billing_address_id</ext_key_to_me>
-          <edit_mode>in_place</edit_mode>
-          <tracking_level>all</tracking_level>
-          <count_min>1</count_min>
-          <count_max>1</count_max>
+        <field id="billing_address" xsi:type="AttributeExternalKey">
+          <sql>billing_address</sql>
+          <target_class>Location</target_class>
+          <is_null_allowed>false</is_null_allowed>
+          <on_target_delete>DEL_MANUAL</on_target_delete>
         </field>
-        <field id="shipping_address" xsi:type="AttributeLinkedSet">
-          <linked_class>Location</linked_class>
-          <ext_key_to_me>shipping_address_id</ext_key_to_me>
-          <edit_mode>in_place</edit_mode>
-          <tracking_level>all</tracking_level>
-          <count_min>0</count_min>
-          <count_max>1</count_max>
+        <field id="shipping_address" xsi:type="AttributeExternalKey">
+          <sql>shipping_address</sql>
+          <target_class>Location</target_class>
+          <is_null_allowed>true</is_null_allowed>
+          <on_target_delete>DEL_MANUAL</on_target_delete>
         </field>
         <field id="email" xsi:type="AttributeEmailAddress">
           <sql>email</sql>
@@ -69,8 +65,35 @@
           <items>
             <item id="col:col1">
               <items>
-                <item id="fieldset:Bussiness Organization:baseinfo">
+                <item id="fieldset:BusinessOrganization:baseinfo">
                   <rank>10</rank>
+                  <items>
+                    <item id="name">
+                      <rank>10</rank>
+                    </item>
+                    <item id="code">
+                      <rank>20</rank>
+                    </item>
+                    <item id="status">
+                      <rank>30</rank>
+                    </item>
+                    <item id="deliverymodel_id">
+                      <rank>40</rank>
+                    </item>
+                    <item id="description_short">
+                      <rank>50</rank>
+                    </item>
+                    <item id="description">
+                      <rank>60</rank>
+                    </item>
+                  </items>
+                </item>
+              </items>
+            </item>
+            <item id="col:col2">
+              <items>
+                <item id="fieldset:BusinessOrganization:addinfo">
+                  <rank>50</rank>
                   <items>
                     <item id="business_name">
                       <rank>10</rank>
@@ -84,23 +107,14 @@
                     <item id="billing_address">
                       <rank>40</rank>
                     </item>
-                  </items>
-                </item>
-              </items>
-            </item>
-            <item id="col:col2">
-              <items>
-                <item id="fieldset:Bussiness Organization:baseinfo">
-                  <rank>50</rank>
-                  <items>
                     <item id="shipping_address">
-                      <rank>10</rank>
+                      <rank>50</rank>
                     </item>
                     <item id="email">
-                      <rank>20</rank>
+                      <rank>60</rank>
                     </item>
                     <item id="phone">
-                      <rank>30</rank>
+                      <rank>70</rank>
                     </item>
                   </items>
                 </item>
@@ -110,30 +124,30 @@
         </details>
         <default_search>
           <items>
-            <item id="business_name">
+            <item id="name">
               <rank>10</rank>
             </item>
-            <item id="company_id">
+            <item id="business_name">
               <rank>20</rank>
             </item>
           </items>
         </default_search>
         <search>
           <items>
-            <item id="business_name">
+            <item id="name">
               <rank>10</rank>
             </item>
-            <item id="company_id">
+            <item id="business_name">
               <rank>20</rank>
             </item>
           </items>
         </search>
         <list>
           <items>
-            <item id="business_name">
+            <item id="name">
               <rank>10</rank>
             </item>
-            <item id="country">
+            <item id="business_name">
               <rank>20</rank>
             </item>
             <item id="company_id">
