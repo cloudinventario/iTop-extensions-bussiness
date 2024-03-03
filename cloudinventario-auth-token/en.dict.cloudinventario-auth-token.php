@@ -17,5 +17,5 @@ Dict::Add('EN US', 'English', 'English', array(
 	'Class:AuthToken/Attribute:token'	=> 'Token',
 	'Class:AuthToken/Attribute:expiration'	=> 'Expiration',
 	'Class:AuthToken/Attribute:resources'	=> 'Resources',
-	'Class:AuthToken/Attribute:organization'	=> 'Organization',
+	'Class:AuthToken/Attribute:org_id'	=> 'Organization',
 ));

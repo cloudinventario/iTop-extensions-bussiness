@@ -4,7 +4,7 @@
   </constants>
   <classes>
     <class id="AuthToken" _delta="define">
-      <!-- <parent>Organization</parent> -->
+      <parent>cmdbAbstractObject</parent>
       <properties>
         <category>bizmodel,searchable</category>
         <abstract>false</abstract>
@@ -14,7 +14,7 @@
         <db_final_class_field/>
         <naming>
           <attributes>
-            <attribute id="token_id"/>
+            <attribute id="token"/>
           </attributes>
         </naming>
         <display_template/>
@@ -36,10 +36,11 @@
           <default_value/>
           <is_null_allowed>true</is_null_allowed>
         </field>
-        <field id="organization" xsi:type="AttributeExternalKey">
-          <sql>organization</sql>
-          <target_class>Organization</target_class>
-          <is_null_allowed>false</is_null_allowed>
+        <field id="org_id" xsi:type="AttributeExternalKey">
+            <sql>org_id</sql>
+            <target_class>Organization</target_class>
+            <is_null_allowed>false</is_null_allowed>
+            <on_target_delete>DEL_MANUAL</on_target_delete>
         </field>
       </fields>
       <methods/>
@@ -60,7 +61,7 @@
                     <item id="resources">
                       <rank>30</rank>
                     </item>
-                    <item id="organization">
+                    <item id="org_id">
                       <rank>40</rank>
                     </item>
                   </items>
@@ -81,7 +82,7 @@
                     <item id="resources">
                       <rank>30</rank>
                     </item>
-                    <item id="organization">
+                    <item id="org_id">
                       <rank>40</rank>
                     </item>
                   </items>
@@ -121,7 +122,7 @@
             <item id="resources">
               <rank>30</rank>
             </item>
-            <item id="organization">
+            <item id="org_id">
               <rank>40</rank>
             </item>
           </items>
