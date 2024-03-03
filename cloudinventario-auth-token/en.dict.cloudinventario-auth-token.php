@@ -14,8 +14,10 @@ Dict::Add('EN US', 'English', 'English', array(
 	'AuthToken:addinfo'		=> 'Additional information',
 
 	'Class:AuthToken'		=> 'Auth Token',
-	'Class:AuthToken/Attribute:token'	=> 'Token',
+	'Class:AuthToken/Attribute:name'	=> 'Name',
+	'Class:AuthToken/Attribute:description'	=> 'Description',
 	'Class:AuthToken/Attribute:expiration'	=> 'Expiration',
+	'Class:AuthToken/Attribute:token'	=> 'Token',
 	'Class:AuthToken/Attribute:resources'	=> 'Resources',
 	'Class:AuthToken/Attribute:org_id'	=> 'Organization',
 ));
