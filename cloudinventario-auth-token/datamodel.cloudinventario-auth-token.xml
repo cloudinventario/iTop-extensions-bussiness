@@ -21,7 +21,8 @@
         <icon/>
       </properties>
       <fields>
-        <field id="token" xsi:type="AttributeEncryptedPassword">
+        <!-- AttributeEncryptedPassword -->
+        <field id="token" xsi:type="AttributeString"> 
           <sql>token</sql>
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
