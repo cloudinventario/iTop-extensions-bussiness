@@ -32,6 +32,8 @@
           <is_null_allowed>false</is_null_allowed>
         </field>
         <field id="quantity" xsi:type="AttributeDecimal">
+          <digits>6</digits>
+          <decimals>2</decimals>
           <sql>quantity</sql>
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
@@ -42,11 +44,15 @@
           <is_null_allowed>false</is_null_allowed>
         </field>
         <field id="unit_price" xsi:type="AttributeDecimal">
+          <digits>6</digits>
+          <decimals>2</decimals>
           <sql>unit_price</sql>
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
         </field>
         <field id="tax" xsi:type="AttributeDecimal">
+          <digits>6</digits>
+          <decimals>2</decimals>
           <sql>tax</sql>
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
