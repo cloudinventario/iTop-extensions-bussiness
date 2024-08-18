@@ -31,7 +31,7 @@
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
         </field>
-        <field id="quantity" xsi:type="AttributeNumber">
+        <field id="quantity" xsi:type="AttributeDecimal">
           <sql>quantity</sql>
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
@@ -41,12 +41,12 @@
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
         </field>
-        <field id="unit_price" xsi:type="AttributeNumber">
+        <field id="unit_price" xsi:type="AttributeDecimal">
           <sql>unit_price</sql>
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
         </field>
-        <field id="tax" xsi:type="AttributeNumber">
+        <field id="tax" xsi:type="AttributeDecimal">
           <sql>tax</sql>
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
