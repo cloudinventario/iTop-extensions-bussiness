@@ -57,6 +57,11 @@
           <default_value/>
           <is_null_allowed>true</is_null_allowed>
         </field>
+        <field id="invoice_id" xsi:type="AttributeString">
+          <sql>invoice_id</sql>
+          <default_value/>
+          <is_null_allowed>false</is_null_allowed>
+        </field>
       </fields>
       <methods/>
       <presentation>
@@ -84,6 +89,9 @@
                     </item>
                     <item id="tax">
                       <rank>60</rank>
+                    </item>
+                    <item id="invoice_id">
+                      <rank>70</rank>
                     </item>
 
                   </items>
@@ -174,6 +182,11 @@
           <default_value/>
           <is_null_allowed>true</is_null_allowed>
         </field>
+        <field id="invoice_id" xsi:type="AttributeString">
+          <sql>invoice_id</sql>
+          <default_value/>
+          <is_null_allowed>false</is_null_allowed>
+        </field>
       </fields>
       <methods/>
       <presentation>
@@ -200,6 +213,9 @@
                       <rank>30</rank>
                     </item>
                     <item id="phone">
+                      <rank>30</rank>
+                    </item>
+                    <item id="invoice_id">
                       <rank>30</rank>
                     </item>
                   </items>
