@@ -26,10 +26,10 @@
           <default_value/>
           <is_null_allowed>false</is_null_allowed>
         </field>
-        <field id="description" xsi:type="AttributeString">
+        <field id="description" xsi:type="AttributeText">
           <sql>description</sql>
           <default_value/>
-          <is_null_allowed>false</is_null_allowed>
+          <is_null_allowed>true</is_null_allowed>
         </field>
         <field id="quantity" xsi:type="AttributeDecimal">
           <digits>6</digits>
@@ -55,7 +55,7 @@
           <decimals>2</decimals>
           <sql>tax</sql>
           <default_value/>
-          <is_null_allowed>false</is_null_allowed>
+          <is_null_allowed>true</is_null_allowed>
         </field>
       </fields>
       <methods/>
@@ -157,22 +157,22 @@
         <field id="address" xsi:type="AttributeString">
           <sql>address</sql>
           <default_value/>
-          <is_null_allowed>false</is_null_allowed>
+          <is_null_allowed>true</is_null_allowed>
         </field>
         <field id="city" xsi:type="AttributeString">
           <sql>city</sql>
           <default_value/>
-          <is_null_allowed>false</is_null_allowed>
+          <is_null_allowed>true</is_null_allowed>
         </field>
         <field id="zip" xsi:type="AttributeString">
           <sql>zip</sql>
           <default_value/>
-          <is_null_allowed>false</is_null_allowed>
+          <is_null_allowed>true</is_null_allowed>
         </field>
         <field id="phone" xsi:type="AttributeString">
           <sql>phone</sql>
           <default_value/>
-          <is_null_allowed>false</is_null_allowed>
+          <is_null_allowed>true</is_null_allowed>
         </field>
       </fields>
       <methods/>
