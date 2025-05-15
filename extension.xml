@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension format="1.0">
-	<extension_code>mon-buss-cloudinventario</extension_code>
+	<extension_code>dob-business</extension_code>
 	<company>dob</company>
-	<author><![CDATA[MatejHor]]></author>
-	<label><![CDATA[CloudInventario Bussiness configuration]]></label>
-	<description><![CDATA[CloudInventario synchronization configuration]]></description>
+	<author><![CDATA[samuel(.)behan(@)dob(.)sk]]></author>
+	<label><![CDATA[DOB Bussiness configuration]]></label>
+	<description><![CDATA[DOB Business configuration options]]></description>
 	<version>1.0.0</version>
-	<release_date>2020-03-27</release_date>
+	<release_date>2025-05-05</release_date>
 	<version_description><![CDATA[
         * Initial release
       ]]></version_description>
